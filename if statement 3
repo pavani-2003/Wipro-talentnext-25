@@ -1,0 +1,13 @@
+import java.util.*;
+class COmmandArgumentsCheck{
+	public static void main(String[] args){
+		if(args.length==0){
+			System.out.print("No Values");
+		}
+		else{
+			for(String args1:args){
+				System.out.print(args1+",");
+			}
+		}
+	}
+}
