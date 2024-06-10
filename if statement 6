@@ -1,0 +1,18 @@
+class Interest {
+	public static void main(String[] args) {
+		String gen=args[0];
+		int age=Integer.parseInt(args[1]);
+		if((gen.equals("Female")) && (age>=59 && age<=100)) {
+			System.out.print("percentage of interest id 9.2%");
+		}
+		else if((gen.equals("Female"))  && (age>=1 && age<59)) {
+			System.out.print("percentage of interest id 9.2%");
+		}
+		else if((gen.equals("male"))  && (age>=1 && age<59)) {
+			System.out.print("percentage of interest id 8.4%");
+		}
+		else {
+			System.out.print("percentage of interest id 10.5%");
+		}
+	}
+}
