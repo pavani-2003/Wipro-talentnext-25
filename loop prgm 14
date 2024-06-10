@@ -1,0 +1,15 @@
+package mycodes;
+import java.util.*;
+public class Sum_of_digit {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter a digit/number: ");
+		int num=sc.nextInt(),sum=0,rem=0;
+		for(sum=0;num!=0;num/=10){
+			sum+=num%10;
+		}
+		System.out.print("Sum: "+sum);
+	}
+
+}
