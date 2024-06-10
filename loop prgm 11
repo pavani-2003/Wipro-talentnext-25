@@ -1,0 +1,15 @@
+import java.util.*;
+public class EvenRange {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter lower and upper range: ");
+		int low=sc.nextInt();
+		int upp=sc.nextInt();
+		System.out.println("even numbers are: ");
+		for(int i=low;i<=upp;i++) {
+			if(i%2==0) {
+				System.out.println(i);
+			}
+		}
+	}
+}
