@@ -1,0 +1,17 @@
+package mycodes;
+import java.util.*;
+public class AlphabeticalOrder {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter any two alphabets: ");
+		char a=sc.next().charAt(0);
+		char b=sc.next().charAt(0);
+		System.out.print("Alphabetical Order: ");
+		if(a>b) {
+			System.out.print(b+","+a);
+		}
+		else {
+			System.out.print(a+","+b);
+		}
+	}
+}
