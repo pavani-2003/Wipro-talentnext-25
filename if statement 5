@@ -1,0 +1,18 @@
+package mycodes;
+import java.util.*;
+public class DataCheck {
+	public static void main(String... args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter: ");
+		char c=sc.next().charAt(0);
+		if(Character.isDigit(c)) {
+			System.out.print("Integer");
+		}
+		else if(Character.isAlphabetic(c)) {
+			System.out.print("Alphabet");
+		}
+		else {
+			System.out.print("Special Character");
+		}
+	}
+}
