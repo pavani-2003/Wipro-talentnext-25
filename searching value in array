@@ -1,0 +1,27 @@
+import java.util.*;
+class ArraySearch{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the Array Size: ");
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            System.out.print("enter Array element "+(i+1)+" : ");
+            a[i]=sc.nextInt();
+        }
+        System.out.print("enter the element that to search: ");
+        int element=sc.nextInt();
+        int index=-1;
+        for(int i=0;i<n;i++){
+            if(a[i]==element){
+                index=i;
+            }
+        }
+        if(index==-1){
+            System.out.print("position: "+index);
+        }
+        else{
+            System.out.print("position: "+(index+1));
+        }
+    }
+}
