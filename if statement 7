@@ -1,0 +1,13 @@
+import java.util.*;
+class AlphabetChange{
+    public static void main(String[] args){
+          Scanner sc=new Scanner(System.in);
+          char alp=sc.next().charAt(0);
+          if(Character.isUpperCase(alp)){
+            System.out.print("converted Alphabet: "+Character.toLowerCase(alp));
+          }
+          else{
+            System.out.print("converted Alphabet: "+Character.toUpperCase(alp));
+          }
+    }
+}
